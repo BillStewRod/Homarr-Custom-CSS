@@ -1,0 +1,94 @@
+/* Custom CSS - "The Batman" Smoky Red Theme for Homarr */
+
+/* 1. Global Background (with your provided Batman image) */
+body {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(15, 0, 0, 0.7)), /* Dark, blood-red vignette */
+    url('https://getyourcomicon.co.uk/wp-content/uploads/2021/10/TheBatman-Poster2-Header.jpg') no-repeat center center fixed !important; /* Update this link if hosted elsewhere, but this holds image_8.png */
+  background-size: cover !important;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif !important;
+  color: #f5f5f5 !important;
+}
+
+/* 2. Glassmorphic Card Style (Smoky Blur + Crimson Glow) */
+.mantine-Paper-root,
+.mantine-Card-root,
+.mantine-Navbar-root,
+.mantine-Header-root,
+[data-with-border] {
+  background: rgba(12, 12, 15, 0.6) !important; /* Smoky, deep obsidian translucent tint */
+  backdrop-filter: blur(14px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(140%) !important;
+  border: 1px solid rgba(230, 25, 25, 0.15) !important; /* Subtle flare red default border */
+  border-radius: 8px !important; /* Slightly rounded, industrial/tactical */
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.7), 
+    inset 0 0 15px rgba(230, 25, 25, 0.05) !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+/* Pulse-like Red Border & Shadow Hover Effect */
+.mantine-Card-root:hover,
+.mantine-Paper-root:hover {
+  border-color: rgba(230, 25, 25, 0.6) !important; /* Intense flare red on focus */
+  box-shadow: 
+    0 0 18px rgba(230, 25, 25, 0.25), 
+    inset 0 0 8px rgba(230, 25, 25, 0.1) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* 3. Distress / Bat-themed Headline Typography */
+h1, h2, h3, h4, 
+.mantine-Title-root,
+.mantine-Text-root[data-weight="700"] {
+  color: #e61919 !important; /* Vivid Flare Red */
+  text-transform: uppercase !important;
+  font-family: 'Impact', 'Arial Black', sans-serif !important; /* High-impact distressed styling */
+  letter-spacing: 1.5px !important;
+  text-shadow: 
+    0 0 8px rgba(230, 25, 25, 0.3), 
+    2px 2px 0px rgba(0,0,0,0.8) !important;
+}
+
+/* Small labels/muted text */
+.mantine-Text-root,
+.mantine-Input-input {
+  color: #b0b0b0 !important;
+}
+
+/* 4. Navigation & Interface Elements */
+/* Top header and side search bar */
+.mantine-TextInput-input, 
+.mantine-Search-input {
+  background: rgba(8, 8, 10, 0.7) !important;
+  border: 1.5px solid rgba(230, 25, 25, 0.2) !important;
+  color: #fff !important;
+  text-shadow: 0 0 2px rgba(230, 25, 25, 0.1);
+}
+
+.mantine-TextInput-input:focus,
+.mantine-Search-input:focus {
+  border-color: #e61919 !important;
+  box-shadow: 0 0 10px rgba(230, 25, 25, 0.4) !important;
+}
+
+/* active link states */
+.mantine-NavLink-root[data-active="true"] {
+  background: rgba(230, 25, 25, 0.15) !important;
+  border-left: 4px solid #e61919 !important;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 10, 12, 0.9);
+}
+::-webkit-scrollbar-thumb {
+  background: #b30000;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e61919;
+}
