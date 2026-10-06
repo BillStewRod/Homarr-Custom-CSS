@@ -8,7 +8,7 @@ A centralized collection of production-ready, custom CSS stylesheets designed to
 
 | Theme Name | Style / Aesthetic | Primary Accent | File Link |
 | :--- | :--- | :--- | :--- |
-| **The Batman (2022)** | Smoky Glass, Noir, Distressed Gotham | Flare Crimson (`#e61919`) | [`themes/the-batman.css`](.Themes/TheBatman.css) |
+| **The Batman (2022)** | Smoky Glass, Noir, Distressed Gotham | Flare Crimson (`#e61919`) | [`Themes/TheBatman.css`](.Themes/TheBatman.css) |
 | *More coming soon* | Minimalist Slate, Cyberpunk Neon, OLED | Various | *TBD* |
 
 ---
